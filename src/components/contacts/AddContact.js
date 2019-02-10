@@ -41,6 +41,8 @@ class AddContact extends Component {
       phone
     };
 
+    this.props.history.push("/");
+
     dispatch({ type: "ADD_CONTACT", payload: newContact });
 
     // Clear State
